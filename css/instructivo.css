@@ -1,0 +1,61 @@
+/* .instructivo {
+  width: 80%;
+  background-color: azure;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 1000px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.btn-back {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}

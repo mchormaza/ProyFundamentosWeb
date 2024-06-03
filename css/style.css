@@ -1,0 +1,264 @@
+@import url("http://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  /* background: rgb(63,94,251);
+   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(244,70,252,1) 100%);  */
+  background-color: #e2f1f8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: 0;
+  padding: 0;
+  background-position: center;
+}
+
+.header {
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .logo img {
+  height: 130px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header .nav-links a:hover {
+  color: #ef0eff;
+}
+
+.header .btn button {
+  font-weight: 700;
+  color: #000000;
+  padding: 9px 25px;
+  background: #feffff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+  background: #e2f1f8;
+  color: #ef0eff;
+  transform: scale(1.1);
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+h4,
+h2,
+small,
+q {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    margin: 0 60px;
+  }
+}
+
+.carousel h2 {
+  font-size: 45px;
+  line-height: 38px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+  color: #020c0c;
+}
+
+.carousel-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 600px; /* Increased height */
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.carousel-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.carousel-item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.carousel-item h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 23px;
+  color: #e2f1f8;
+  padding: 15px;
+}
+
+.carousel-item h4 small {
+  font-size: 15px;
+  display: block;
+}
+
+.carousel-item a img {
+  object-fit: cover;
+  height: 400px; /* Increased height */
+  width: 300px; /* Increased width */
+  border-radius: 16px; /* Fixed typo */
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    width: 350px; /* Adjusted width */
+  }
+  .carousel-item a img {
+    width: 350px; /* Adjusted width */
+  }
+}
+
+.carousel-arrow {
+  border-radius: 30px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.seccion_uno {
+  background-image: url("https://i.pinimg.com/564x/19/98/a1/1998a1d93289a259c7fe28f09adae1e6.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contenido_descripcion {
+  color: #5f636f;
+  display: flex;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  padding: 5px 8%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.titulo_principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  min-width: 1000px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+footer {
+  background-color: #7e7777;
+
+  align-items: end;
+  height: 150px;
+  padding: 5px 1%;
+  text-align: center;
+}
+
+.ig {
+  color: #e2f1f8;
+}
+
+footer .contenido_footer img {
+  align-self: safe;
+  height: 20px;
+  width: auto;
+  transition: all 0.3s;
+  background-size: cover;
+}
