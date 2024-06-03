@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Venta de áccesorios tecnológicos</title>
+    <!--Link de referencia que enlaza CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/productos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../html/index.html">
+          <img src="../imagenes/imagen_logo.png" alt="logo de la marca" />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../html/registro.html">Registro</a></li>
+          <li><a href="../html/productos.html">Productos</a></li>
+          <li><a href="../html/busqueda.html">Busqueda</a></li>
+        </ul>
+      </nav>
+      <a href="../html/contacto.html" class="btn"><button>Contact</button></a>
+    </header>
+    <main>
+      <div class="container">
+      <h1 class="titulo_principal">Adquirir mi producto</h1>
+    </main>
+
+    <div id="lista_productos" class="main-container-products">
+      <!-- Aquí se genersará dinámicamente el contenido -->
+    </div>
+
+    <div class="container-paginacion">
+      <div class="paginacion" id="paginacion">
+        <!-- Los slides serán agregados dinámicamente por JavaScript -->
+      </div>
+    </div>
+
+    <script src="../js/datos.js"></script>
+    <script src="../js/lista_productos.js"></script>
+  </body>
+  <footer class="footer">
+    <div class="contenido_footer">
+      <p>
+        "Techsesorios Cell: Estilo en cada accesorio, moda en cada conexión. Haz
+        que cada detalle marque la diferencia en tus dispositivos."
+      </p>
+      <p>&copy; TechSesoriosCell.com Copyright &copy; 2024.</p>
+      <p>Todos los derechos reservados</p>
+      <a
+        class="ig"
+        href="https://www.instagram.com/techsesorios_cell?igsh=ZHFzb2ZkM3dmOXRm/"
+        target="_blank"
+      >
+        <img
+          src="../imagenes/ig_logo.jpg"
+          alt="logo de instagram"
+        />@techsesorios_cell
+      </a>
+    </div>
+  </footer>
+</html>

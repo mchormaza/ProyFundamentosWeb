@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <title>Venta de productos electronicos</title>
+    <link rel="stylesheet" type="text/css" href="../css/registro.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="../html/index.html">
+          <img src="../imagenes/imagen_logo.png" alt="logo de la marca" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../html/registro.html">Registro</a></li>
+          <li><a href="../html/productos.html">Productos</a></li>
+          <li><a href="../html/busqueda.html">Busqueda</a></li>
+        </ul>
+      </nav>
+      <a href="../html/contacto.html" class="btn"><button>Contact</button></a>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="mt-4">Registro de Productos TechSesorios Cell</h1>
+        <form id="formPdto" action="">
+          <div class="form-group">
+            <label for="NamePdto">Nombre del Producto:</label>
+            <input
+              type="text"
+              class="form-control"
+              minlength="12"
+              maxlength="26"
+              id="nombre"
+              placeholder="Ingrese el nombre del producto:"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <select class="form-control" id="tipo">
+              <option>Seleccionar tipo:</option>
+              <option>Accesorios Celular</option>
+              <option>Accesorios Computador</option>
+              <option>Audífonos</option>
+              <option>Cargadores</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="referencia">Referencias disponibles:</label>
+            <input
+              type="text"
+              class="form-control"
+              minlength="6"
+              maxlength="8"
+              id="referencia"
+              placeholder="Ingrese la referencia del producto:"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="Cantidad">Cantidad disponible:</label>
+            <input
+              type="number"
+              class="form-control"
+              min="1"
+              max="3"
+              id="cantidad"
+              required
+              placeholder="Ingrese la cantidad disponible:"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="color">Colores disponibles:</label>
+            <input
+              type="text"
+              class="form-control"
+              minlength="4"
+              maxlength="25"
+              id="color"
+              placeholder="Ingrese  el color disponible del producto:"
+            />
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Precio:</label>
+            <input
+              type="number"
+              class="form-control"
+              min="5000"
+              max="200000"
+              required
+              id="precio"
+              placeholder="Ingrese el precio del producto:"
+            />
+          </div>
+          <div class="form-group">
+            <label for="productImage">Imagen del Producto:</label>
+            <img id="previewImage" src="#" alt="Preview Image" />
+            <select id="imagen" required>
+              <option value="seleccionar-imagen" selected>
+                Selecciona una imagen
+              </option>
+              <option value="imagen1">imagen 1</option>
+              <option value="imagen2">imagen 2</option>
+              <option value="imagen3">imagen 3</option>
+              <option value="imagen4">imagen 4</option>
+              <option value="imagen5">imagen 5</option>
+              <option value="imagen6">imagen 6</option>
+              <option value="imagen7">imagen 7</option>
+              <option value="imagen8">imagen 8</option>
+              <option value="imagen9">imagen 9</option>
+              <option value="imagen10">imagen 10</option>
+            </select>
+          </div>
+          <!-- Campos adicionales específicos para cada categoría -->
+          <div class="form-group">
+            <label for="productoCod">Código:</label>
+            <input
+              type="number"
+              class="form-control"
+              min="0001"
+              max="8567"
+              id="codigo"
+              placeholder="Ingrese el código del producto"
+            />
+          </div>
+
+          <div id="buttton-group">
+            <button type="submit" class="btn-primary">
+              Registrar Producto
+            </button>
+            <button type="reset" class="btn-secondary">Limpiar Campos</button>
+          </div>
+        </form>
+        <p>
+          <a href="../html/instructivo.html" target="_blank"
+            >¿Cómo registrar?</a
+          >
+        </p>
+        <a href="../html/instructivo.html" class="btnInstructivo"
+          >Ir al instructivo</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenido_footer">
+        <p>&copy; TechSesoriosCell.com Copyright &copy; 2024.</p>
+        <p>Todos los derechos reservados</p>
+        <a
+          class="ig"
+          href="https://www.instagram.com/techsesorios_cell?igsh=ZHFzb2ZkM3dmOXRm/"
+          target="_blank"
+        >
+          <img
+            src="../imagenes/ig_logo.jpg"
+            alt="logo de instagram"
+          />@techsesorios_cell>
+        </a>
+      </div>
+    </footer>
+
+    <script type="text/JavaScript" src="/js/formulario.js"></script>
+  </body>
+</html>
